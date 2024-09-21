@@ -45,17 +45,86 @@ def fillCorner(allie, corner):
         allie.begin_fill()
         drawSquare(allie, 50)
         allie.end_fill()
+squares = (int)(input("how many squares in squares do you want? 1-5"))
+def squaresInSquares (connie, squares):
+    if squares == 1:
+        connie.penup()
+        connie.goto(-150,150)
+        connie.pendown()
+        drawSquare(connie,300)
+    if squares == 2:
+        connie.penup()
+        connie.goto(-150,150)
+        connie.pendown()
+        drawSquare(connie,300)
+        connie.penup()
+        connie.goto(-125,125)
+        connie.pendown()
+        drawSquare(connie,250)
+    if squares == 3:
+        connie.penup()
+        connie.goto(-150,150)
+        connie.pendown()
+        drawSquare(connie,300)
+        connie.penup()
+        connie.goto(-125,125)
+        connie.pendown()
+        drawSquare(connie,250)
+        connie.penup()
+        connie.goto(-100,100)
+        connie.pendown()
+        drawSquare(connie,200)
+    if squares == 4:
+        connie.penup()
+        connie.goto(-150,150)
+        connie.pendown()
+        drawSquare(connie,300)
+        connie.penup()
+        connie.goto(-125,125)
+        connie.pendown()
+        drawSquare(connie,250)
+        connie.penup()
+        connie.goto(-100,100)
+        connie.pendown()
+        drawSquare(connie,200)
+        connie.penup()
+        connie.goto(-75,75)
+        connie.pendown()
+        drawSquare(connie,150)
+    if squares == 5:
+        connie.penup()
+        connie.goto(-150,150)
+        connie.pendown()
+        drawSquare(connie,300)
+        connie.penup()
+        connie.goto(-125,125)
+        connie.pendown()
+        drawSquare(connie,250)
+        connie.penup()
+        connie.goto(-100,100)
+        connie.pendown()
+        drawSquare(connie,200)
+        connie.penup()
+        connie.goto(-75,75)
+        connie.pendown()
+        drawSquare(connie,150)
+        connie.penup()
+        connie.goto(-50,50)
+        connie.pendown()
+        drawSquare(connie,100)
 def main():
     myTurtle = turtle.Turtle()
     #drawPolygon(myTurtle, 5) #draws a pentagon
     #drawPolygon(myTurtle, 8) #draws an octogon
     
-    fillCorner(myTurtle, corner)#should work now based on user input and only fillcorner function that needs uncommented.
+    #fillCorner(myTurtle, corner)#fills user input corner(just needs uncommented)
     
     #fillCorner(myTurtle, 2) #draws a square with top right corner filled in.
     #fillCorner(myTurtle, 3) #draws a square bottom left corner filled in.
     #fillCorner(myTurtle, 4)
-    # squaresInSquares(myTurtle, 5) #draws 5 concentric squares
+    
+    squaresInSquares(myTurtle, squares)
+    #squaresInSquares(myTurtle, 5) #draws 5 concentric squares
     # squaresInSquares(myTurtle, 3) #draws 3 concentric squares
 
 
